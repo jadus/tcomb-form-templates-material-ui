@@ -4,13 +4,16 @@ import getLabel from './getLabel'
 import getError from './getError'
 import getHelp from './getHelp'
 
+import SelectField from 'material-ui/SelectField';
+import MenuItem from 'material-ui/MenuItem';
+
 function getOption(opts) {
-  return <option key={opts.value} disabled={opts.disabled} value={opts.value}>{opts.text}</option>
+  return <MenuItem disabled={props.disabled} value={props.value} key={props.value} primaryText={props.text} />
 }
 
-function getOptGroup(opts) {
-  return <optgroup key={opts.label} disabled={opts.disabled} label={opts.label}>{opts.options.map(getOption)}</optgroup>
-}
+//function getOptGroup(opts) {
+//  return <optgroup key={opts.label} disabled={opts.disabled} label={opts.label}>{opts.options.map(getOption)}</optgroup>
+//}
 
 function create(overrides = {}) {
   function select(locals) {
@@ -46,7 +49,7 @@ function create(overrides = {}) {
   }
 
   select.renderSelect = overrides.renderSelect || function renderSelect(locals) {
-    return <select {...locals.attrs}>{select.renderOptions(locals)}</select>
+    return <SelectField {...locals.attrs}>{select.renderOptions(locals)}</SelectField>
   }
 
   select.renderLabel = overrides.renderLabel || function renderLabel(locals) {
