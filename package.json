@@ -1,7 +1,7 @@
 {
-  "name": "tcomb-form-templates-semantic",
-  "version": "0.1.3",
-  "description": "semantic templates for tcomb-form",
+  "name": "tcomb-form-templates-material-ui",
+  "version": "0.0.1",
+  "description": "material-ui templates for tcomb-form",
   "main": "lib/index.js",
   "files": [
     "lib",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gcanti/tcomb-form-templates-semantic.git"
+    "url": "https://github.com/jadus/tcomb-form-templates-material-ui.git"
   },
-  "author": "Giulio Canti <giulio.canti@gmail.com>",
+  "author": "Lucas Ménant <lucas.menant@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gcanti/tcomb-form-templates-semantic/issues"
+    "url": "https://github.com/jadus/tcomb-form-templates-material-ui/issues"
   },
-  "homepage": "https://github.com/gcanti/tcomb-form-templates-semantic",
+  "homepage": "https://github.com/jadus/tcomb-form-templates-material-ui",
   "dependencies": {
     "classnames": "^2.1.3"
   },
@@ -37,11 +37,11 @@
   "tags": [
     "tcomb-form",
     "templates",
-    "semantic ui"
+    "material ui"
   ],
   "keywords": [
     "tcomb-form",
     "templates",
-    "semantic ui"
+    "material ui"
   ]
 }
