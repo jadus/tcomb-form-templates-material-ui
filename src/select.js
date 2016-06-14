@@ -71,6 +71,7 @@ function create(overrides = {}) {
   select.renderVertical = overrides.renderVertical || function renderVertical(locals) {
     const className = {
       field: true,
+      test: true,
       error: locals.hasError,
       disabled: locals.disabled,
       [`field-depth-${locals.path.length}`]: true,
